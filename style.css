@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2f2f2;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------- HEADER ------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+.home-button {
+    width: 45px;
+    margin-left: 30px;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    width: 500px;
+}
+.hero-section img {
+    width: fit-content;
+    height: 900px;
+    border-radius: 20px;
+}
+
+/* -------------- ABOUT ME --------------- */
+
+#about {
+    padding: 100px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-me-col-1 {
+    flex-basis: 45%;
+}
+.about-me-col-2 {
+    flex-basis: 55%;
+}
+.about-me-col-1 img {
+    width: 100%;
+    max-width: fit-content;
+    max-height: 550px;
+    border-radius: 15px;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after {
+    width: 50%;
+}
+.tab-contents ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* ----------------- MY WORK --------------------*/
+
+
+/* ------------------ CONTACT ---------------------*/
+
